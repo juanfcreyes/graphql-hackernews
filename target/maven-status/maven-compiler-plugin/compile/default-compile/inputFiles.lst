@@ -1,4 +1,12 @@
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\pojos\SigninPayload.java
 D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\graphql\GraphQLEndpoint.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\repository\UserRepository.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\resolver\SigninResolver.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\resolver\Mutation.java
 D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\pojos\Link.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\resolver\LinkResolver.java
 D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\resolver\Query.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\pojos\AuthData.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\graphql\AuthContext.java
+D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\pojos\User.java
 D:\Repositorios\GraphQL\hackernewsii-graphql-java\src\main\java\repository\LinkRepository.java

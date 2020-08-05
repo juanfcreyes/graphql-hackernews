@@ -5,6 +5,7 @@ import java.util.List;
 import com.coxautodev.graphql.tools.GraphQLRootResolver;
 
 import pojos.Link;
+import pojos.LinkFilter;
 import pojos.User;
 import repository.LinkRepository;
 import repository.UserRepository;
@@ -21,8 +22,8 @@ public class Query implements GraphQLRootResolver {
         this.userRepository = userRepository;
     }
 
-    public List<Link> allLinks() {
-        return linkRepository.getAllLinks();
+    public List<Link> allLinks(LinkFilter filter) {
+        return linkRepository.getAllLinks(filter);
     }
     
     public List<User> allUsers() {

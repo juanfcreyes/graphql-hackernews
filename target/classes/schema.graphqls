@@ -9,11 +9,17 @@ type Mutation {
   createUser(name: String!, authProvider: AuthData!): User
   createLink(url: String!, description: String!): Link
   signinUser(auth: AuthData): SigninPayload
+  createVote(linkId: ID, userId: ID): Vote
 }
 
 type Query {
-  allLinks: [Link]
+  allLinks(filter: LinkFilter): [Link]
   allUsers: [User]
+}
+
+input LinkFilter {
+  description_contains: String
+  url_contains: String
 }
 
 type User {
@@ -31,6 +37,13 @@ input AuthData {
 type SigninPayload {
   token: String
   user: User
+}
+
+type Vote {
+  id: ID!
+  createdAt: String!
+  user: User!
+  link: Link!
 }
 
 schema {

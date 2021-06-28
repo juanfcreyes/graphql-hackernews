@@ -13,7 +13,8 @@ type Mutation {
 }
 
 type Query {
-  allLinks(filter: LinkFilter): [Link]
+  allLinks(filter: LinkFilter, skip: Int = 0, first: Int = 0): [Link]
+  numberOfLinks: Int
   allUsers: [User]
 }
 

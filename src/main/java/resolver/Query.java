@@ -22,8 +22,12 @@ public class Query implements GraphQLRootResolver {
         this.userRepository = userRepository;
     }
 
-    public List<Link> allLinks(LinkFilter filter) {
-        return linkRepository.getAllLinks(filter);
+    public List<Link> allLinks(LinkFilter filter, Number skip, Number first) {
+        return linkRepository.getAllLinks(filter, skip.intValue(), first.intValue());
+    }
+    
+    public Long numberOfLinks() {
+    	return linkRepository.numberOfLinks();
     }
     
     public List<User> allUsers() {
